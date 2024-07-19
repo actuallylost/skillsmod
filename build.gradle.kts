@@ -9,7 +9,6 @@ plugins {
 
     alias(libs.plugins.kotlin)
     alias(libs.plugins.quilt.loom)
-    kotlin("jvm")
 }
 
 val archives_base_name: String by project
