@@ -9,6 +9,7 @@ plugins {
 
     alias(libs.plugins.kotlin)
     alias(libs.plugins.quilt.loom)
+    kotlin("jvm")
 }
 
 val archives_base_name: String by project
@@ -22,6 +23,7 @@ repositories {
     // Loom adds the essential maven repositories to download Minecraft and libraries from automatically.
     // See https://docs.gradle.org/current/userguide/declaring_repositories.html
     // for more information about repositories.
+    mavenCentral()
 }
 
 // All the dependencies are declared at gradle/libs.version.toml and referenced with "libs.<id>"
@@ -53,6 +55,7 @@ dependencies {
     // modImplementation(libs.bundles.qfapi) // If you wish to use the deprecated Fabric API modules
 
     modImplementation(libs.qkl)
+    implementation(kotlin("stdlib-jdk8"))
 }
 
 tasks {
