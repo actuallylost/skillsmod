@@ -9,6 +9,6 @@ object SkillsMod : ModInitializer {
     val LOGGER: Logger = LoggerFactory.getLogger("SkillsMod")
 
     override fun onInitialize(mod: ModContainer) {
-        LOGGER.info("Hello Quilt world from {}!", mod.metadata().name())
+        LOGGER.info("{} Initialized", mod.metadata().name())
     }
 }
