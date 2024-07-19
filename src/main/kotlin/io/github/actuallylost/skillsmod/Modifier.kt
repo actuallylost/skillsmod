@@ -1,4 +1,4 @@
 ﻿package io.github.actuallylost.skillsmod
 
-class Modifier {
+class Modifier(val value: Float) {
 }
